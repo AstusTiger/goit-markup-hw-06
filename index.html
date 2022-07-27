@@ -51,6 +51,8 @@
                 <h1 class="hero-slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br>
                     ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button type="button" class="button-studio" data-modal-open>Заказать услугу</button>
+
+                <!--Backdrop-->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="modal-close-btn" data-modal-close>
@@ -58,9 +60,53 @@
                                 <use href="./icons/icons.svg#icon-btn-close"></use>
                             </svg>
                         </button>
+                        <form>
+                            <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+                            <label class="field">
+                                <p class="modal-label">Имя</p>
+                                <div class="input-container">
+                                    <input class="input" type="text" name="user" />
+                                    <svg class="modal-icon" width="12" height="12">
+                                        <use href="./icons/optimized_icon/icons2.svg#icon-user"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label class="field">
+                                <p class="modal-label">Телефон</p>
+                                <div class="input-container">
+                                    <input class="input" type="tel" name="users_phone_number" />
+                                    <svg class="modal-icon" width="13" height="13">
+                                        <use href="./icons/optimized_icon/icons2.svg#icon-handset"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label class="field">
+                                <p class="modal-label">Почта</p>
+                                <div class="input-container">
+                                    <input class="input" type="email" name="users_email" />
+                                    <svg class="modal-icon" width="15" height="12">
+                                        <use href="./icons/optimized_icon/icons2.svg#icon-envelope-for-form"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label class="comment">
+                                <p class="modal-label">Комментарий</p>
+                                <textarea name="comment" placeholder="Введите текст"></textarea>
+                            </label>
+                            <label class="checkbox">
+                                <input class="visually-hidden" type="checkbox" name="policy"></input>
+                                <svg class="checkbox-img" width="16" height="15">
+                                    <use href="./icons/optimized_icon/icons2.svg#icon-checkmark"></use>
+                                </svg>
+                                <span class="accept">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                                        договора</a></span>
+                            </label>
+                            <button class="modal-button" type="submit">Отправить</button>
+                        </form>
                     </div>
-                </div> 
+                </div>
         </section>
+
         <!--Section 2-->
         <!--Преимущества-->
         <section class="section without-padding-bottom">
@@ -316,38 +362,38 @@
                         </li>
                         <li>
                             <a class="clients-container-element" href="">
-                            <svg class="icon-company2 logo-company" width="106" height="60">
-                                <use href="./images/icons.svg#icon-company2"></use>
-                            </svg>
-                        </a>
-                        </li>
-                        <li>
-                            <a class="clients-container-element" href="">
-                            <svg class="icon-company3 logo-company" width="106" height="60">
-                                <use href="./images/icons.svg#icon-company3"></use>
-                            </svg>
-                        </a>
-                        </li>
-                        <li>
-                            <a class="clients-container-element" href="">
-                            <svg class="icon-company4 logo-company" width="106" height="60">
-                                <use href="./images/icons.svg#icon-company4"></use>
-                            </svg>
+                                <svg class="icon-company2 logo-company" width="106" height="60">
+                                    <use href="./images/icons.svg#icon-company2"></use>
+                                </svg>
                             </a>
                         </li>
                         <li>
                             <a class="clients-container-element" href="">
-                            <svg class="icon-company5 logo-company" width="106" height="60">
-                                <use href="./images/icons.svg#icon-company5"></use>
-                            </svg>
-                        </a>
+                                <svg class="icon-company3 logo-company" width="106" height="60">
+                                    <use href="./images/icons.svg#icon-company3"></use>
+                                </svg>
+                            </a>
                         </li>
                         <li>
                             <a class="clients-container-element" href="">
-                            <svg class="icon-company6 logo-company" width="106" height="60">
-                                <use href="./images/icons.svg#icon-company6"></use>
-                            </svg>
-                        </a>
+                                <svg class="icon-company4 logo-company" width="106" height="60">
+                                    <use href="./images/icons.svg#icon-company4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="clients-container-element" href="">
+                                <svg class="icon-company5 logo-company" width="106" height="60">
+                                    <use href="./images/icons.svg#icon-company5"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="clients-container-element" href="">
+                                <svg class="icon-company6 logo-company" width="106" height="60">
+                                    <use href="./images/icons.svg#icon-company6"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -400,6 +446,18 @@
                         </li>
                     </ul>
                 </div>
+                <form class="form-container">
+                    <div class="input-container">
+                        <label for="email_input" class="footer-field"> ПОДПИШИТЕСЬ НА РАССЫЛКУ </label>
+                        <input class="footer-input" id="email_input" type="email" name="write-mail"
+                            placeholder="E-mail" />
+                    </div>
+                    <button class="tg-button" type="submit">Подписаться
+                        <svg class="icon-send">
+                            <use href="./icons/optimized_icon/icons2.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
