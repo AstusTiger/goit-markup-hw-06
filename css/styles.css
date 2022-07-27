@@ -388,10 +388,11 @@ form {
 }
 
 .input-container {
+
     display: flex;
     flex-direction: column;
     gap:20px;
-	/* position: relative; */
+	position: relative;
 }
 
 .form-container {
